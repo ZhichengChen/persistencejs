@@ -1,3 +1,12 @@
+Fork change
+===========
+ Add alter column capability for html5 websql,  please  config the persistence.version and persistence.alterColumnQueries in your code, For example:
+
+    persistence.version = 2.0;
+    persistence.queries = ['ALTER TABLE User ADD COLUMN address TEXT'];
+
+ If you have column change in your code, just change the persistence.version = 2.0(may be heigher) ,and add your alter sql in persistence.queries , while never trying to delete the column. Good luck. 
+
 persistence.js
 ==============
 `persistence.js` is a asynchronous Javascript object-relational
